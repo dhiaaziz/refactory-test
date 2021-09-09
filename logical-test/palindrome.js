@@ -17,12 +17,12 @@ const rl = readline.createInterface({
 // });
 
 
-function checkPalindrom (str) {
+function palindrome (str) {
     return str == str.split('').reverse().join('');
   }
 
 rl.question("Masukkan kata: ", function(kata) {
-    const a = checkPalindrom(kata);
+    const a = palindrome(kata);
     console.log(a)
     rl.close()
 });

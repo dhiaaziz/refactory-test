@@ -5,12 +5,6 @@ const rl = readline.createInterface({
 });
 
 
-
-
-function checkPalindrom (str) {
-    return str == str.split('').reverse().join('');
-  }
-
 rl.question("Masukkan kalimat: ", function(sentence) {
     const reverseString = sentence.split(' ').map(word => word.split('').reverse().join('')).join(' ')
     console.log(reverseString)
